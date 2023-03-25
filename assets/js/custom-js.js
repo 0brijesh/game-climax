@@ -166,3 +166,43 @@ window.addEventListener("click", windowOnClick);
     },
   });
 // _ENDS > WHY WE LOVE FANTASY KHILADI < SHB -->
+
+// _BEGIN > WHY WE LOVE FANTASY KHILADI < SHB -->
+  // Assign some jquery elements we'll need
+  var $swiper = $(".we-offer-review");
+  var $bottomSlide = null; // Slide whose content gets 'extracted' and placed
+  // into a fixed position for animation purposes
+  var $bottomSlideContent = null; // Slide content that gets passed between the
+  // panning slide stack and the position 'behind'
+  // the stack, needed for correct animation style
+
+  var mySwiper = new Swiper(".we-offer-review", {
+    spaceBetween: 1,
+    slidesPerView: 3,
+    centeredSlides: true,
+    roundLengths: true,
+    loop: true,
+    loopAdditionalSlides: 0,
+    autoplay: {
+      delay: 4000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1.5,
+      },
+      992: {
+        slidesPerView: 2.5,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
+// _ENDS > WHY WE LOVE FANTASY KHILADI < SHB -->
